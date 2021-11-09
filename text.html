@@ -1,0 +1,24 @@
+<html>
+<head>
+
+</head>
+<body>
+<div id="dynamicCheck">
+   <input type="button" value="Create Element" onclick="createNewElement();"/>
+</div>
+
+<div id="newElementId">New inputext goes here:</div>
+<script type="text/JavaScript">
+function createNewElement() {
+    // First create a DIV element.
+	var txtNewInputtext = document.createElement('div');
+
+    // Then add the content (a new input box) of the element.
+	txtNewInputtext.innerHTML = "<input type='text' id='newInputtext'>";
+
+    // Finally put it where it is supposed to appear.
+	document.getElementById("newElementId").appendChild(txtNewInputtext);
+}
+</script>
+</body>
+</html>
